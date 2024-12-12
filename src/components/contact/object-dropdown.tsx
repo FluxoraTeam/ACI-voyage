@@ -9,22 +9,27 @@ const ObjectDropdown = () => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");
 
-  const dropdown = gsap.to(dropdownRef.current, {
-    duration: 0.5,
-    ease: "power4.inOut",
-    opacity: open ? 1 : 0,
-    height: open ? "auto" : 0,
-  });
-
   useEffect(() => {
-    console.log("calling...");
+    console.log("calling...", open);
 
     if (open) {
-      dropdown.play();
+      gsap.to(dropdownRef.current, {
+        duration: 0.5,
+        ease: "power4.inOut",
+        opacity: 1,
+        height: "auto"
+      });
+      // dropdown.play();
     } else {
-      dropdown.reverse();
+      gsap.to(dropdownRef.current, {
+        duration: 0.5,
+        ease: "power4.inOut",
+        opacity: 0,
+        height: 0
+      });
+      // dropdown.reverse();
     }
-  }, [open, dropdown]);
+  }, [open]);
 
   function handleValue(value: string) {
     setValue(value);
