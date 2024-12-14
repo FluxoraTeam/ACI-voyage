@@ -38,7 +38,7 @@ const Nav = () => {
 
     gsap.to(".close_btn", {
       duration: 0.3,
-      marginRight: "0"
+      marginRight: "0",
     });
     gsap.to(".close_btn_middle", {
       duration: 0.3,
@@ -71,14 +71,14 @@ const Nav = () => {
       x: "-50%",
       opacity: 1,
       ease: "elastic.out(1,1.1)",
-    })
+    });
   }
 
   return (
     <>
-      <nav className="absolute z-40 w-screen p-5 overflow-hidden">
+      <nav className="absolute z-40 w-screen overflow-hidden p-5">
         <button
-          className="menu_btn group lg:absolute z-50 space-y-3 p-2 lg:p-5"
+          className="menu_btn group z-50 space-y-3 p-2 lg:absolute lg:p-5"
           onClick={() => openSidebar()}
         >
           <div className="menu_line_top h-0.5 w-16 bg-[#222B65]"></div>
@@ -86,9 +86,9 @@ const Nav = () => {
           <div className="menu_line_bottom h-0.5 w-16 bg-[#222B65]"></div>
         </button>
 
-        <div className="nav_logo pt-7 lg:pt-14 flex justify-center">
+        <div className="nav_logo flex justify-center pt-7 lg:pt-14">
           <Image
-            src={"/images/logo.png"}
+            src={"/images/logo.webp"}
             alt="Logo"
             width={0}
             height={0}

@@ -3,35 +3,35 @@ import Card from "./card";
 
 const cards = [
   {
-    src: "/images/service_1.png",
+    src: "/images/service_1.webp",
     alt: "Service boy",
     title: "Gestion des déplacements internationaux",
     description:
       "Prise en charge complète des déplacements internationaux, y compris pour des événements prestigieux tels que la Fashion Week, le Festival de Cannes, le Grand Prix de Formule 1, et bien plus.",
   },
   {
-    src: "/images/service_2.jpg",
+    src: "/images/service_2.webp",
     alt: "Passport Image",
     title: "Réservations de transport",
     description:
       "Billets de train et d'avion avec accréditation IATA, pour des voyages individuels ou des privatisations.",
   },
   {
-    src: "/images/service_3.png",
+    src: "/images/service_3.webp",
     alt: "Customer",
     title: "Suivi clientèle",
     description:
       "Service client dédié pour accompagner chaque étape du voyage.",
   },
   {
-    src: "/images/service_4.png",
+    src: "/images/service_4.webp",
     alt: "Bar",
     title: "Hôtellerie et restauration",
     description:
       "Organisation d'hébergements exclusifs et de services de restauration haut de gamme.",
   },
   {
-    src: "/images/service_5.png",
+    src: "/images/service_5.webp",
     alt: "Hotel",
     title: "Événementiel et conciergerie",
     description:

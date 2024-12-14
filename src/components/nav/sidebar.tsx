@@ -76,7 +76,7 @@ const Sidebar = () => {
       x: "-150%",
       opacity: 0,
       ease: "elastic.out(1,1.1)",
-    })
+    });
   }
 
   return (
@@ -86,7 +86,7 @@ const Sidebar = () => {
         transform: "translateX(-100%)",
       }}
     >
-      <div className="relative h-full flex flex-col">
+      <div className="relative flex h-full flex-col">
         <button
           className="close_btn mx-auto block space-y-3 p-5 pt-7 text-4xl text-white lg:pt-14"
           onClick={closeSidebar}
@@ -103,7 +103,7 @@ const Sidebar = () => {
                 lenis?.scrollTo(link.href);
               }}
               key={i}
-              className="cursor-pointer w-fit hover:text-[#EBE2D6] border-b border-white/10 uppercase lg:border-none"
+              className="w-fit cursor-pointer border-b border-white/10 uppercase hover:text-[#EBE2D6] lg:border-none"
             >
               {link.name}
             </li>
@@ -111,7 +111,7 @@ const Sidebar = () => {
         </ul>
         <div className="mx-auto mb-40 mt-auto w-[50vw] lg:hidden">
           <Image
-            src="/images/logo_lite.png"
+            src="/images/logo_lite.webp"
             alt="Logo plane"
             width={0}
             height={0}

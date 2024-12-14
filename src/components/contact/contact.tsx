@@ -13,7 +13,7 @@ const Contact = () => {
       <div
         id="contact"
         className="relative min-h-screen bg-cover bg-[right_top] bg-no-repeat py-20 before:absolute before:inset-0 before:bg-[#f1e6d7] before:opacity-90"
-        style={{ backgroundImage: "url(/images/bg.jpg)" }}
+        style={{ backgroundImage: "url(/images/bg.webp)" }}
       >
         <Form />
       </div>
@@ -58,48 +58,46 @@ const Contact = () => {
           </div>
         </div> */}
 
-
-
-          <div className="mx-auto my-40 justify-center hidden lg:flex">
-            <div className="flex relative z-20 size-64 [background:linear-gradient(#F1E6D7,#F1E6D7)_padding-box,linear-gradient(to_top_right,#77777700,#505EB9B2)_border-box] rounded-full flex-col justify-center gap-10 items-center border border-transparent p-4">
-              <div className="flex flex-col gap-4 items-center">
-                <Phone />
-                <span className="gradient__dark text-xl font-light">
-                  Téléphone :
-                </span>
-              </div>
-              <span className="text-xl font-light text-[#505EB9]/70">
-                +33 1 40 21 11 10
+        <div className="mx-auto my-40 hidden justify-center lg:flex">
+          <div className="relative z-20 flex size-64 flex-col items-center justify-center gap-10 rounded-full border border-transparent p-4 [background:linear-gradient(#F1E6D7,#F1E6D7)_padding-box,linear-gradient(to_top_right,#77777700,#505EB9B2)_border-box]">
+            <div className="flex flex-col items-center gap-4">
+              <Phone />
+              <span className="gradient__dark text-xl font-light">
+                Téléphone :
               </span>
             </div>
-            <div className="flex relative z-10 -translate-x-7 size-64 [background:linear-gradient(#F1E6D7,#F1E6D7)_padding-box,linear-gradient(to_top_right,#77777700,#505EB9B2)_border-box] rounded-full flex-col gap-10 justify-center items-center border border-transparent p-4">
-              <div className="flex flex-col items-center gap-4">
-                <Mail />
-                <span className="gradient__dark text-xl font-light">
-                  E-mail :
-                </span>
-              </div>
-              <span className="text-,d font-light text-[#505EB9]/70">
-                events@acivoyage.com
+            <span className="text-xl font-light text-[#505EB9]/70">
+              +33 1 40 21 11 10
+            </span>
+          </div>
+          <div className="relative z-10 flex size-64 -translate-x-7 flex-col items-center justify-center gap-10 rounded-full border border-transparent p-4 [background:linear-gradient(#F1E6D7,#F1E6D7)_padding-box,linear-gradient(to_top_right,#77777700,#505EB9B2)_border-box]">
+            <div className="flex flex-col items-center gap-4">
+              <Mail />
+              <span className="gradient__dark text-xl font-light">
+                E-mail :
               </span>
             </div>
-            <div className="flex -translate-x-14 size-64 [background:linear-gradient(#F1E6D7,#F1E6D7)_padding-box,linear-gradient(to_top_right,#77777700,#505EB9B2)_border-box] rounded-full flex-col justify-center items-center border border-transparent p-4">
-              <House />
-              <div className="flex flex-col">
-                <span className="gradient__dark mb-7 text-center mt-4 block text-xl font-light">
-                  Adresse :
-                </span>
-                <span className="text-xl text-center max-w-32 font-light text-[#505EB9]/70">
-                  75 Avenue Parmentier 75011 Paris, France
-                </span>
-              </div>
+            <span className="text-,d font-light text-[#505EB9]/70">
+              events@acivoyage.com
+            </span>
+          </div>
+          <div className="flex size-64 -translate-x-14 flex-col items-center justify-center rounded-full border border-transparent p-4 [background:linear-gradient(#F1E6D7,#F1E6D7)_padding-box,linear-gradient(to_top_right,#77777700,#505EB9B2)_border-box]">
+            <House />
+            <div className="flex flex-col">
+              <span className="gradient__dark mb-7 mt-4 block text-center text-xl font-light">
+                Adresse :
+              </span>
+              <span className="max-w-32 text-center text-xl font-light text-[#505EB9]/70">
+                75 Avenue Parmentier 75011 Paris, France
+              </span>
             </div>
           </div>
+        </div>
 
-          <div className="mx-auto relative my-40 lg:hidden flex justify-center flex-wrap-reverse">
-            <div className="relative">
-            <div className="flex absolute -bottom-[60%] left-1/2 -translate-x-1/2 z-10 size-48 [background:linear-gradient(#F1E6D7,#F1E6D7)_padding-box,linear-gradient(to_top_right,#77777700,#505EB9B2)_border-box] rounded-full flex-col justify-center gap-10 items-center border border-transparent p-4">
-              <div className="flex flex-col gap-4 items-center">
+        <div className="relative mx-auto my-40 flex flex-wrap-reverse justify-center lg:hidden">
+          <div className="relative">
+            <div className="absolute -bottom-[60%] left-1/2 z-10 flex size-48 -translate-x-1/2 flex-col items-center justify-center gap-10 rounded-full border border-transparent p-4 [background:linear-gradient(#F1E6D7,#F1E6D7)_padding-box,linear-gradient(to_top_right,#77777700,#505EB9B2)_border-box]">
+              <div className="flex flex-col items-center gap-4">
                 <Phone />
                 <span className="gradient__dark text-xl font-light">
                   Téléphone :
@@ -109,7 +107,7 @@ const Contact = () => {
                 +33 1 40 21 11 10
               </span>
             </div>
-            <div className="flex absolute z-20 top-14 -right-[28%] size-52 [background:linear-gradient(#F1E6D7,#F1E6D7)_padding-box,linear-gradient(to_top_right,#77777700,#505EB9B2)_border-box] rounded-full flex-col gap-3 justify-center items-center border border-transparent p-4">
+            <div className="absolute -right-[28%] top-14 z-20 flex size-52 flex-col items-center justify-center gap-3 rounded-full border border-transparent p-4 [background:linear-gradient(#F1E6D7,#F1E6D7)_padding-box,linear-gradient(to_top_right,#77777700,#505EB9B2)_border-box]">
               <div className="flex flex-col items-center gap-4">
                 <Mail />
                 <span className="gradient__dark text-xl font-light">
@@ -120,22 +118,19 @@ const Contact = () => {
                 events@acivoyage.com
               </span>
             </div>
-            <div className="flex size-64 -translate-x-20 [background:linear-gradient(#F1E6D7,#F1E6D7)_padding-box,linear-gradient(to_top_right,#77777700,#505EB9B2)_border-box] rounded-full flex-col justify-center items-center border border-transparent p-4">
+            <div className="flex size-64 -translate-x-20 flex-col items-center justify-center rounded-full border border-transparent p-4 [background:linear-gradient(#F1E6D7,#F1E6D7)_padding-box,linear-gradient(to_top_right,#77777700,#505EB9B2)_border-box]">
               <House />
               <div className="flex flex-col">
-                <span className="gradient__dark mb-7 text-center mt-4 block text-xl font-light">
+                <span className="gradient__dark mb-7 mt-4 block text-center text-xl font-light">
                   Adresse :
                 </span>
-                <span className="text-xl text-center max-w-32 font-light text-[#505EB9]/70">
+                <span className="max-w-32 text-center text-xl font-light text-[#505EB9]/70">
                   75 Avenue Parmentier 75011 Paris, France
                 </span>
               </div>
             </div>
-            </div>
           </div>
-
-
-
+        </div>
 
         <div className="hidden items-center justify-center gap-7 py-10 lg:flex">
           <Social>

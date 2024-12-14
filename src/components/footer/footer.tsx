@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <footer className="grid gap-10 px-10 py-20 pt-10 text-[max(3vw,1.2rem)] lg:grid-cols-4 lg:gap-0 lg:text-base">
       <Image
-        src={"/images/logo.png"}
+        src={"/images/logo.webp"}
         alt="Logo"
         width={0}
         height={0}

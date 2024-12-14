@@ -13,11 +13,11 @@ const Expertise = () => {
         <div className="space-y-5">
           <ImageContainer
             alt="Flight window view image"
-            src={"/images/expertise_1.jpg"}
+            src={"/images/expertise_1.webp"}
           />
           <ImageContainer
             alt="Luxury hotel reception"
-            src={"/images/expertise_2.png"}
+            src={"/images/expertise_2.webp"}
           />
         </div>
 
