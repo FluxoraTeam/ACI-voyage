@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import Circle from "../icons/circle";
 
 const commitments = [
