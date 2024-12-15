@@ -114,7 +114,7 @@ const Contact = () => {
                   E-mail :
                 </span>
               </div>
-              <span className="text-md font-light text-[#505EB9]/70">
+              <span className="text-sm font-light text-[#505EB9]/70">
                 events@acivoyage.com
               </span>
             </div>

@@ -13,7 +13,7 @@ const About = () => {
       <div className="grid lg:grid-cols-2">
         <div className="lg:hidden">
           <Image
-            src={"/images/about_mobile.pwebp"}
+            src={"/images/about_mobile.svg"}
             alt="About image"
             className="object-cover"
             width={0}
@@ -59,9 +59,8 @@ const About = () => {
 
         <div className="relative hidden lg:block">
           <Image
-            src={"/images/about_desktop.webp"}
+            src={"/images/about_desktop.svg"}
             alt="About image"
-            className="object-cove"
             width={0}
             height={0}
             sizes="100vw"
