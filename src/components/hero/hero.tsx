@@ -29,8 +29,8 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="flex h-full items-center lg:hidden">
-          <h1 className="relative text-center text-[10vw] capitalize italic leading-tight after:absolute after:-bottom-5 after:left-0 after:h-[1px] after:w-full after:bg-[radial-gradient(circle,#222B6530,#CA181D00)]">
+        <div className="flex h-full items-center justify-center lg:hidden">
+          <h1 className="relative text-center text-[5vw] capitalize italic leading-tight after:absolute after:-bottom-5 after:left-0 after:h-[1px] after:w-full after:bg-[radial-gradient(circle,#222B6530,#CA181D00)]">
             <span className="gradient__dark">Le Sur mesure depuis </span>
             <span className="text-[#640c03]">1998</span>
           </h1>
