@@ -9,7 +9,7 @@ const Hero = () => {
     >
       <div className="relative size-full">
         <div className="hero_heading absolute bottom-0 z-50 ms-[max(10vw,100px)] hidden w-fit lg:block">
-          <h1 className="relative text-[2.1vw] capitalize italic text-[#4551a0] after:absolute after:-bottom-5 after:left-0 after:h-[1px] after:w-full after:bg-[radial-gradient(circle,#222B6580,#CA181D00)]">
+          <h1 className="relative text-[1.25vw] capitalize italic text-[#4551a0] after:absolute after:-bottom-5 after:left-0 after:h-[1px] after:w-full after:bg-[radial-gradient(circle,#222B6580,#CA181D00)]">
             Le Sur mesure depuis <span className="text-[#640c03]">1998</span>
           </h1>
           <div

@@ -1,12 +1,10 @@
-import Circle from "../icons/circle";
-
 const commitments = [
   "Intégrité",
-  "Collaboration",
-  "Engagement",
   "Confiance",
-  "Responsabilité",
   "Discrétion",
+  "Engagement",
+  "Collaboration",
+  "Responsabilité",
 ];
 
 const Commitments = () => {
@@ -22,15 +20,18 @@ const Commitments = () => {
         Nos <br /> Engagements
       </span>
       <div className="relative items-center justify-center before:absolute before:left-0 before:hidden before:h-[90%] before:w-[1px] before:bg-black/10 lg:flex lg:flex-1 lg:before:block">
-        <div className="hidden h-full py-40 lg:block">
-          <ul className="mx-auto grid w-fit grid-cols-3 gap-20 text-[5vw] uppercase lg:text-[1.7vw]">
-            {commitments.map((commitment, i) => (
-              <li
-                className={`${i % 2 === 0 ? "gradient__dark" : "gradient__light"} relative mx-auto w-fit`}
-                key={commitment}
-              >
+        <div className="hidden h-full py-32 lg:block">
+          <ul className="mx-auto flex w-fit flex-col gap-8 text-center text-[5vw] uppercase lg:text-[1.7vw]">
+            {/* <li
+              className={`${i % 2 === 0 ? "gradient__dark" : "gradient__light"} relative mx-auto w-fit`}
+              key={commitment}
+            >
+             {commitment}
+               <Circle className="absolute -right-1/4 -top-full size-20" />
+            </li> */}
+            {commitments.map((commitment) => (
+              <li key={commitment} className="gradient__dark">
                 {commitment}
-                <Circle className="absolute -right-1/4 -top-full size-20" />
               </li>
             ))}
           </ul>

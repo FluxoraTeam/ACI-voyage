@@ -6,8 +6,10 @@ import Image from "next/image";
 const links = [
   { name: "À Propos d'ACI Voyage", href: "#about" },
   { name: "Notre expertise", href: "#expertise" },
-  { name: "Nos Engagements", href: "#commitments" },
   { name: "Nos services", href: "#services" },
+  { name: "Nos Engagements", href: "#commitments" },
+  { name: "Gallerie", href: "#gallery" },
+  { name: "Notre Équipe", href: "#our-team" },
   { name: "Contact", href: "#contact" },
 ];
 

@@ -43,12 +43,12 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="relative min-h-screen p-7 lg:p-[max(10vw,100px)]"
+      className="relative min-h-screen pt-5 lg:p-[max(10vw,100px)] lg:pt-0"
     >
       <h1 className="text-center text-[7vw] tracking-widest text-[#222B65] lg:text-left lg:text-[3vw] lg:tracking-wider">
         Nos Services
       </h1>
-      <hr className="my-5 border-black/10" />
+      <hr className="my-5 w-1/2 border-black/10" />
       <div className="mt-10 grid gap-3 lg:grid-cols-3">
         {cards.map((card, i) => (
           <Card

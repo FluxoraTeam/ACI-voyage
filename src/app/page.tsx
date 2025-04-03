@@ -6,6 +6,7 @@ import Footer from "@/components/footer/footer";
 import Hero from "@/components/hero/hero";
 import Nav from "@/components/nav/nav";
 import Services from "@/components/services/services";
+import Gallery from "@/components/gallery/gallery";
 
 export default function Home() {
   return (
@@ -14,9 +15,10 @@ export default function Home() {
       <Hero />
       <About />
       <Expertise />
-      <hr className="lg:block hidden mx-auto w-4/5 border-black/10" />
+      <hr className="mx-auto hidden w-4/5 border-black/10 lg:block" />
       <Commitments />
       <Services />
+      <Gallery />
       <Contact />
       <div className="gradient__line__dark my-20 h-[1px] w-full"></div>
       <Footer />
