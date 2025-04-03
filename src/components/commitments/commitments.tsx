@@ -38,22 +38,29 @@ const Commitments = () => {
         </div>
         <div className="gradient__line absolute bottom-10 hidden h-[1px] w-1/2 lg:block"></div>
         <div
-          className="relative mx-auto mt-10 w-full border-2 px-10 py-24 shadow shadow-black/10 lg:mt-20 lg:hidden lg:w-1/2 lg:py-32 lg:shadow-2xl"
+          className="relative mx-auto mt-10 w-full px-px py-px shadow shadow-black/10 lg:mt-20 lg:hidden lg:w-1/2 lg:py-32 lg:shadow-2xl"
           style={{
-            borderImage:
-              "linear-gradient(to bottom right, transparent 50%, rgba(34,43,101,0.3) 100%) 1",
+            // borderImage:
+            //   "linear-gradient(to bottom right, transparent 50%, rgba(34,43,101,0.3) 100%) 1",
+            borderRadius: "100px",
+            backgroundImage:
+              "linear-gradient(#f1e6d7, #f1e6d7), linear-gradient(120deg, transparent, transparent, #505EB9)",
+            backgroundOrigin: "border-box",
+            backgroundClip: "content-box, border-box",
           }}
         >
-          <ul className="flex flex-col items-center space-y-7 text-[5vw] uppercase lg:space-y-10 lg:text-[1.5vw]">
-            {commitments.map((commitment, i) => (
-              <li
-                className={`${i % 2 === 0 ? "gradient__dark" : "gradient__light"} w-fit`}
-                key={commitment}
-              >
-                {commitment}
-              </li>
-            ))}
-          </ul>
+          <div className="px-10 py-24">
+            <ul className="flex flex-col items-center space-y-7 text-[5vw] uppercase lg:space-y-10 lg:text-[1.5vw]">
+              {commitments.map((commitment) => (
+                <li
+                  className="gradient__dark w-fit font-light"
+                  key={commitment}
+                >
+                  {commitment}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
       <span className="mt-10 block text-[10vw] font-light uppercase leading-none opacity-5 lg:hidden">

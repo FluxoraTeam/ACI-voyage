@@ -11,7 +11,7 @@ type CardProps = {
 
 const Card = ({ src, alt, className, title, footer }: CardProps) => {
   return (
-    <div>
+    <div className="w-full flex-shrink-0 md:w-auto">
       <div
         className={cn(
           "relative h-[30rem] before:absolute before:inset-0 before:bg-gradient-to-t before:from-black/70 before:to-transparent",
@@ -32,7 +32,7 @@ const Card = ({ src, alt, className, title, footer }: CardProps) => {
         />
         <div className="absolute inset-0 flex flex-col justify-end gap-3 text-white">
           <div className="mb-12 border-b border-white/15 px-5 py-4">
-            <h4 className="text-[5vw] capitalize leading-tight lg:text-[1.6vw]">
+            <h4 className="text-[4vw] capitalize leading-tight lg:text-[1.6vw]">
               {title}
             </h4>
           </div>

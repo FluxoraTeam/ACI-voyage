@@ -10,7 +10,7 @@ const Gallery = () => {
         Gallerie
       </h1>
       <hr className="my-5 w-1/2 border-black/10" />
-      <div className="mt-10 grid gap-3 lg:grid-cols-3">
+      <div className="mt-10 flex grid-cols-3 gap-3 overflow-x-scroll lg:grid">
         <Card
           alt="Image 1"
           src="/images/gallery_1.jpg"
